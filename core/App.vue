@@ -3,14 +3,8 @@
         <v-app>
             <app-header
                 class="app-shell-header"
-                @click-menu="handleClickHeaderMenu"
                 @click-back="handleClickHeaderBack">
             </app-header>
-            <app-sidebar
-                @hide-sidebar = "handleHideSidebar"
-                @show-sidebar = "handleShowSidebar"
-            >
-            </app-sidebar>
             <transition
                 :name="pageTransitionEffect"
                 @before-enter="handleBeforeEnter"
@@ -35,7 +29,6 @@
 import Vue from 'vue';
 import {mapState, mapActions} from 'vuex';
 import AppHeader from '@/components/AppHeader';
-import AppSidebar from '@/components/AppSidebar';
 import UpdateToast from '@/components/UpdateToast';
 import {keepAlivePages} from '@/.lavas/router';
 
@@ -45,8 +38,7 @@ export default {
     name: 'app',
     components: {
         UpdateToast,
-        AppHeader,
-        AppSidebar
+        AppHeader
     },
     computed: {
         ...mapState('pageTransition', {
@@ -83,10 +75,6 @@ export default {
         };
     },
     methods: {
-        ...mapActions('appShell/appSidebar', [
-            'showSidebar',
-            'hideSidebar'
-        ]),
         ...mapActions('appShell/common', [
             'setPageSwitching',
             'savePageScrollPosition'
@@ -140,15 +128,6 @@ export default {
         },
         handleClickHeaderBack() {
             this.$router.go(-1);
-        },
-        handleClickHeaderMenu() {
-            this.showSidebar();
-        },
-        handleHideSidebar() {
-            this.hideSidebar();
-        },
-        handleShowSidebar() {
-            this.showSidebar();
         }
     }
 };
@@ -165,6 +144,7 @@ $page-transition-duration = 0.35s
     -moz-osx-font-smoothing grayscale
     text-align center
     color #2c3e50
+    background #f5f5f5
     height 100%
 
     .application--wrap
@@ -172,7 +152,7 @@ $page-transition-duration = 0.35s
         min-height 100%
 
     .app-shell-header
-        position fixed
+        position absolute
         right 0
         left 0
         z-index 140
@@ -183,8 +163,9 @@ $page-transition-duration = 0.35s
         right 0
         bottom 0
         left 0
+        padding 0 5vw
         -webkit-overflow-scrolling touch
-        background white
+        background #f5f5f5
 
         &::-webkit-scrollbar
             width 0

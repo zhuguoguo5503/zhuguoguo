@@ -33,6 +33,22 @@ module.exports = {
                 'iscroll/build/iscroll-lite$': path.join(__dirname, 'core/iscroll-ssr.js')
             }
         },
+        extend: function(config, context) {
+            if (context.type === 'base') {
+                config.module.rules[1].exclude =
+                    /node_modules(?![\\/]_vue-awesome@\d+\.\d+\.\d+@vue-awesome[\\/])/;
+                config.module.rules.push({
+                    resource: path.join(__dirname, 'core/app.js'), // 应用loader的文件
+                    loader: 'svg-loader',
+                    enforce: 'pre'
+                });
+                config.resolveLoader = {
+                    alias: {
+                        'svg-loader': path.join(__dirname, 'build/svg-loader')
+                    }
+                };
+            }
+        },
         /**
          * node externals
          *
@@ -40,6 +56,17 @@ module.exports = {
          */
         nodeExternalsWhitelist: [
             /iscroll/
+        ]
+    },
+    icon: {
+        prefix: 'svg-',
+        svgDir: path.join(__dirname, 'assets/svg'),
+        icons: [
+            'home',
+            'map-marker',
+            'tree',
+            'globe',
+            'user'
         ]
     },
     router: {

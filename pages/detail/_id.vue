@@ -49,8 +49,7 @@ Fast - Respond quickly to user interactions with silky smooth animations and no 
 let state = {
     appHeaderState: {
         show: true,
-        title: 'Lavas',
-        showMenu: false,
+        title: '助果果',
         showBack: true,
         showLogo: false,
         actions: [

@@ -1,6 +1,6 @@
 /**
  * @file appShell/appHeader module
- * @author lavas
+ * @author Tricker(tricker.pan@gmail.com)
  */
 
 export const SET_APP_HEADER = 'SET_APP_HEADER';
@@ -19,7 +19,7 @@ export const state = () => {
          *
          * @type {string}
          */
-        title: 'Lavas',
+        title: '助果果',
 
         /**
          * logo图标
@@ -30,13 +30,6 @@ export const state = () => {
             src: '',
             alt: ''
         },
-
-        /**
-         * 是否展示左侧菜单图标
-         *
-         * @type {boolean}
-         */
-        showMenu: true,
 
         /**
          * 是否展示左侧返回图标
@@ -51,6 +44,20 @@ export const state = () => {
          * @type {boolean}
          */
         showLogo: false,
+
+        /**
+         * 是否展示中间标题
+         *
+         * @type {boolean}
+         */
+        showTitle: false,
+
+        /**
+         * 是否展示右侧actions
+         *
+         * @type {boolean}
+         */
+        showActions: false,
 
         /**
          * 右侧操作按钮数组

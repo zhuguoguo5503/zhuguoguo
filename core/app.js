@@ -11,9 +11,13 @@ import {createStore} from '@/.lavas/store';
 import AppComponent from './App.vue';
 import Vuetify from 'vuetify';
 
+import Icon from 'vue-awesome/components/Icon.vue';
+
 Vue.use(Meta);
 
 Vue.use(Vuetify);
+
+Vue.component('icon', Icon);
 
 Vue.config.productionTip = false;
 
