@@ -8,7 +8,10 @@ export const SET_APP_TAB_BAR = 'SET_APP_TAB_BAR';
 export const state = () => {
     return {
         show: false,
-        tabBar: []
+        showBar: false,
+        showHello: false,
+        tabBar: [],
+        active: 0
     };
 };
 
