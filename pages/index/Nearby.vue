@@ -31,16 +31,7 @@
             active: 1
         });
         store.dispatch('appShell/nearby/nearbyNav/setNearbyNav', {
-            show: true,
-            mainNav: [
-                '推荐',
-                '美食',
-                '旅游',
-                '服装',
-                '美容',
-                '娱乐',
-                '洗浴'
-            ]
+            show: true
         })
     }
 

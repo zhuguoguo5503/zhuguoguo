@@ -2,13 +2,19 @@
     <transition name="slide-down">
         <div class="nearby-nav-main" v-show="show">
             <div class="nearby-nav-item"
-                 v-for="(item, index) in mainNav"
-                 :class="active === index ? 'active' : ''"
-                 @click="switchMainNav(index)">{{item}}</div>
-            <div class="nearby-nav-sub" v-show="showSub">
-                <div class="nearby-nav-sub-item"
-                     v-for="item in subNav"
-                     @click="getContent(item)">{{item}}</div>
+                 v-for="(item, index) in navList"
+                 :key="index">
+                <span @click="switchMainNav(index)"
+                      :class="active === index ? 'active' : ''">{{item.name}}</span>
+                <div class="nearby-nav-sub"
+                     v-if="active === index ? 'active' : ''">
+                    <div @click="closeSubList()">
+                        <div class="nearby-nav-sub-item"
+                             v-for="subItem in item.subList"
+                             @click="getContent(subItem)"
+                             v-show="showSub">{{subItem}}</div>
+                    </div>
+                </div>
             </div>
         </div>
     </transition>
@@ -22,15 +28,14 @@
         data() {
             return {
                 active: 0,
-                showSub: true
+                showSub: false
             }
         },
         name: "nearbyNav",
         computed: {
             ...mapState('appShell/nearby/nearbyNav', [
                 'show',
-                'mainNav',
-                'subNav'
+                'navList'
             ])
         },
         methods: {
@@ -38,9 +43,13 @@
                 if (this.active !== index) {
                     this.active = index;
                 }
+                if (this.active !== true){
+                    this.showSub = true;
+                }
             },
-            getContent: function (item) {
-                console.log(item);
+            getContent: function (subItem) {
+                console.log(subItem);
+                this.showSub = false;
             }
         }
     }
@@ -70,16 +79,16 @@
             line-height 10vw
             box-sizing border-box
 
-            &.active
+            & > span.active
                 color #e15517
                 font-size 18px
                 font-weight bold
 
-    .nearby-nav-sub
-        position fixed
-        top 36vw
-        right 5vw
-        left 5vw
-        bottom 20vw
+            .nearby-nav-sub
+                position fixed
+                top 36vw
+                right 5vw
+                left 5vw
+                bottom 20vw
 
 </style>
