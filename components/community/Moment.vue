@@ -1,10 +1,10 @@
 <template>
-    <div></div>
+    <div class="moment-wrapper"></div>
 </template>
 
 <script>
     export default {
-        name: "storeList"
+        name: "moment"
     }
 </script>
 

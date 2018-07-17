@@ -33,7 +33,7 @@
     .index-nav-box
         white-space nowrap
         width 100%
-        height 63vw
+        height 65vw
         overflow-x scroll
         overflow-y hidden
 
@@ -41,12 +41,10 @@
             display inline-block
             width 33vw
             height 63vw
-            margin-right 1vw
+            margin-right 3vw
             border-radius 3vw
+            box-shadow 1vw 1vw 1vw
             background orange
-
-            &:last-child
-                margin-right 0
 
             & > a
                 display flex

@@ -7,7 +7,6 @@ export const SET_NEARBY_NAV = 'SET_NEARBY_NAV';
 
 export const state = () => {
         return {
-            show: false,
             navList: [{
                 name: '推荐',
                 subList: []

@@ -1,18 +1,19 @@
 <template>
     <transition name="slide-down">
-        <div class="nearby-nav-main" v-show="show">
+        <div class="nearby-nav-main">
             <div class="nearby-nav-item"
                  v-for="(item, index) in navList"
                  :key="index">
                 <span @click="switchMainNav(index)"
                       :class="active === index ? 'active' : ''">{{item.name}}</span>
                 <div class="nearby-nav-sub"
-                     v-if="active === index ? 'active' : ''">
-                    <div @click="closeSubList()">
+                     v-if="active === index ? 'active' : ''"
+                     v-show="showSub"
+                     @click="closeSubNav()">
+                    <div>
                         <div class="nearby-nav-sub-item"
                              v-for="subItem in item.subList"
-                             @click="getContent(subItem)"
-                             v-show="showSub">{{subItem}}</div>
+                             @click="getContent(subItem)">{{subItem}}</div>
                     </div>
                 </div>
             </div>
@@ -34,7 +35,6 @@
         name: "nearbyNav",
         computed: {
             ...mapState('appShell/nearby/nearbyNav', [
-                'show',
                 'navList'
             ])
         },
@@ -43,12 +43,18 @@
                 if (this.active !== index) {
                     this.active = index;
                 }
-                if (this.active !== true){
+                if (this.active !== true && index !== 0){
                     this.showSub = true;
+                } else {
+                    console.log(index);
+                    this.showSub = false;
                 }
             },
             getContent: function (subItem) {
                 console.log(subItem);
+                this.showSub = false;
+            },
+            closeSubNav: function () {
                 this.showSub = false;
             }
         }
@@ -58,12 +64,10 @@
 <style lang="stylus" scoped>
 
     .nearby-nav-main
-        position fixed
-        top 26vw
-        right 5vw
-        left 5vw
         height 10vw
+        margin 0 5vw
         white-space nowrap
+        background #f5f5f5
         overflow-x scroll
         overflow-y hidden
 
@@ -89,6 +93,6 @@
                 top 36vw
                 right 5vw
                 left 5vw
-                bottom 20vw
+                bottom 0
 
 </style>

@@ -1,12 +1,14 @@
 <template>
     <div class="nearby-wrapper">
-        <nearby-nav></nearby-nav>
+        <nearby-nav class="nearby-nav"></nearby-nav>
+        <goods-list class="nearby-goods-list"></goods-list>
     </div>
 </template>
 
 <script>
 
-    import NearbyNav from '@/components/nearby/NearbyNav'
+    import NearbyNav from '@/components/nearby/NearbyNav';
+    import GoodsList from '@/components/main/GoodsList';
 
     function setState(store) {
         store.dispatch('appShell/appHeader/setAppHeader', {
@@ -30,15 +32,13 @@
             showHello: false,
             active: 1
         });
-        store.dispatch('appShell/nearby/nearbyNav/setNearbyNav', {
-            show: true
-        })
     }
 
     export default {
         name: "nearBy",
         components: {
-            NearbyNav
+            NearbyNav,
+            GoodsList
         },
         async asyncData({store, route}) {
             setState(store);
@@ -55,11 +55,25 @@
         position absolute
         top 0
         right 0
-        bottom 20vw
+        bottom 12vw
         left 0
         padding 0 5vw
         margin 0
         overflow-x hidden
         overflow-y scroll
+
+        .nearby-nav
+            position fixed
+            top 26vw
+            right 0
+            left 0
+            z-index 12
+
+        .nearby-goods-list
+            position relative
+            top 10vw
+            right 0
+            left 0
+            z-index 0
 
 </style>
