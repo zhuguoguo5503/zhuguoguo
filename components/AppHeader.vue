@@ -18,6 +18,15 @@
                 <slot name="title" v-if="showTitle">
                     {{ title }}
                 </slot>
+                <slot name="community" v-if="showCommunity">
+                    <div class="community-tab-bar">
+                        <div class="community-tab-item"
+                             v-for="(item, index) in community"
+                             :key="index"
+                             :class="communityActive === index ? 'active' : ''"
+                             @click="switchCommunity(index)">{{item}}</div>
+                    </div>
+                </slot>
             </div>
             <div class="app-header-right">
                 <slot name="actions"
@@ -42,6 +51,11 @@
     import EventBus from '@/core/event-bus';
 
     export default {
+        data() {
+            return {
+                communityActive: 0
+            }
+        },
         name: 'appHeader',
         computed: {
             ...mapState('appShell/appHeader', [
@@ -49,9 +63,11 @@
                 'showBack',
                 'showLogo',
                 'showTitle',
+                'showCommunity',
                 'showActions',
                 'logoIcon',
                 'title',
+                'community',
                 'actions'
             ]),
             ...mapState('appShell/common', [
@@ -88,6 +104,11 @@
                 if (route) {
                     this.$router.push(route);
                 }
+            },
+            switchCommunity(index) {
+                if (this.communityActive !== index) {
+                    this.communityActive = index;
+                }
             }
         }
     };
@@ -114,6 +135,24 @@
             display flex
             justify-content center
             align-items center
+
+        .community-tab-bar
+            display flex
+            flex-direction row
+            justify-content center
+            align-items center
+            width 90vw
+            height 14vw
+            border-bottom 2px solid gray
+
+            .community-tab-item
+                margin 0 2vw
+                font-size 18px
+
+                &.active
+                    font-size 20px
+                    font-weight bold
+                    color #e15517
 
         // 改变 logo 大小
         .app-header-logo

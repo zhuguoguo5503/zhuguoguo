@@ -39,7 +39,7 @@
             ])
         },
         methods: {
-            switchMainNav: function (index) {
+            switchMainNav(index) {
                 if (this.active !== index) {
                     this.active = index;
                 }
@@ -50,11 +50,11 @@
                     this.showSub = false;
                 }
             },
-            getContent: function (subItem) {
+            getContent(subItem) {
                 console.log(subItem);
                 this.showSub = false;
             },
-            closeSubNav: function () {
+            closeSubNav() {
                 this.showSub = false;
             }
         }

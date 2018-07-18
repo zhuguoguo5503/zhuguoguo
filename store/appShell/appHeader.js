@@ -22,6 +22,13 @@ export const state = () => {
         title: '助果果',
 
         /**
+         * 标题内容
+         *
+         * @type {Array}
+         */
+        community: [],
+
+        /**
          * logo图标
          *
          * @type {object}
@@ -51,6 +58,14 @@ export const state = () => {
          * @type {boolean}
          */
         showTitle: false,
+
+
+        /**
+         * 是否展示中间标题
+         *
+         * @type {boolean}
+         */
+        showCommunity: false,
 
         /**
          * 是否展示右侧actions

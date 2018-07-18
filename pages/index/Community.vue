@@ -1,10 +1,27 @@
 <template>
-    <div class="community-wrapper"></div>
+    <div class="community-wrapper">
+        <community-moment class="community-moment"></community-moment>
+    </div>
 </template>
 
 <script>
 
+    import CommunityMoment from '@/components/community/CommunityMoment';
+
     function setState(store) {
+        store.dispatch('appShell/appHeader/setAppHeader', {
+            show: true,
+            showLogo: false,
+            showTitle: false,
+            showCommunity: true,
+            showActions: false,
+            community: [
+                '最新',
+                '热门',
+                '附近',
+                '关注'
+            ]
+        });
         store.dispatch('appShell/appTabBar/setAppTabBar', {
             show: true,
             showBar: true,
@@ -15,6 +32,9 @@
 
     export default {
         name: "community",
+        components: {
+            CommunityMoment
+        },
         async asyncData({store, route}) {
             setState(store);
         },
@@ -36,5 +56,9 @@
         margin 0
         overflow-x hidden
         overflow-y scroll
+
+        .community-moment
+            position relative
+            z-index 10
 
 </style>

@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c5a2c3a-930d-4a9f-9566-d47da5cf8c18" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/components/community/Moment.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/main/GoodsDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/main/StoreDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/goodsDetail/_id.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/appShell/community/moment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/CommunityMoment.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/index/IndexTabBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/index/IndexTabBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/main/GoodsList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/GoodsList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/main/StoreList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/StoreList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/AppHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AppTabBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/AppTabBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/community/Moment.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/nearby/NearbyNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/nearby/NearbyNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index/Community.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/Community.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index/Nearby.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/Nearby.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/appShell/main/goodsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/appShell/main/goodsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/appShell/main/storeList.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/appShell/main/storeList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/appShell/nearby/nearbyNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/appShell/nearby/nearbyNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/appShell/appHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/appShell/appHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/appShell/community/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/appShell/community/communityMoment.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,47 +26,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GoodsList.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/main/GoodsList.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommunityMoment.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/community/CommunityMoment.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-251">
+              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Community.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/index/Community.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="454">
+              <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Moment.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/community/Moment.vue">
+      <file leaf-file-name="AppTabBar.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/AppTabBar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+            <state relative-caret-position="34">
+              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moment.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/store/appShell/community/moment.js">
+      <file leaf-file-name="Index.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/Index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+            <state relative-caret-position="409">
+              <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goodsList.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/appShell/main/goodsList.js">
+      <file leaf-file-name="communityMoment.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/appShell/community/communityMoment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="14" lean-forward="true" selection-end-line="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Nearby.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/index/Nearby.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="62" column="25" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="62" selection-end-column="25" />
+            <state relative-caret-position="364">
+              <caret line="79" column="252" selection-start-line="79" selection-start-column="252" selection-end-line="79" selection-end-column="252" />
             </state>
           </provider>
         </entry>
@@ -106,14 +111,21 @@
         <option value="$PROJECT_DIR$/components/index/IndexTabBar.vue" />
         <option value="$PROJECT_DIR$/store/appShell/nearby/nearbyNav.js" />
         <option value="$PROJECT_DIR$/pages/goodsDetail/_id.vue" />
-        <option value="$PROJECT_DIR$/components/nearby/NearbyNav.vue" />
         <option value="$PROJECT_DIR$/store/appShell/main/goodsList.js" />
-        <option value="$PROJECT_DIR$/components/main/GoodsList.vue" />
-        <option value="$PROJECT_DIR$/pages/index/Nearby.vue" />
-        <option value="$PROJECT_DIR$/pages/index/Community.vue" />
         <option value="$PROJECT_DIR$/components/community/Moments.vue" />
+        <option value="$PROJECT_DIR$/store/appShell/appHeader.js" />
+        <option value="$PROJECT_DIR$/pages/index/Nearby.vue" />
+        <option value="$PROJECT_DIR$/components/AppTabBar.vue" />
+        <option value="$PROJECT_DIR$/components/nearby/NearbyNav.vue" />
+        <option value="$PROJECT_DIR$/components/AppHeader.vue" />
         <option value="$PROJECT_DIR$/components/community/Moment.vue" />
         <option value="$PROJECT_DIR$/store/appShell/community/moment.js" />
+        <option value="$PROJECT_DIR$/components/main/GoodsList.vue" />
+        <option value="$PROJECT_DIR$/assets/stylus/main.styl" />
+        <option value="$PROJECT_DIR$/store/appShell/community/communityMoment.js" />
+        <option value="$PROJECT_DIR$/components/community/CommunityMoment.vue" />
+        <option value="$PROJECT_DIR$/pages/index/Community.vue" />
+        <option value="$PROJECT_DIR$/pages/Index.vue" />
       </list>
     </option>
   </component>
@@ -158,6 +170,22 @@
             <path>
               <item name="zhuguoguo" type="b2602c69:ProjectViewProjectNode" />
               <item name="zhuguoguo" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhuguoguo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhuguoguo" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhuguoguo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhuguoguo" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhuguoguo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhuguoguo" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -183,6 +211,11 @@
               <item name="zhuguoguo" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="nearby" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhuguoguo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhuguoguo" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zhuguoguo" type="b2602c69:ProjectViewProjectNode" />
@@ -271,16 +304,15 @@
       <option name="presentableId" value="Default" />
       <updated>1531712541402</updated>
       <workItem from="1531712543557" duration="11831000" />
-      <workItem from="1531791401385" duration="15732000" />
+      <workItem from="1531791401385" duration="24940000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27563000" />
+    <option name="totallyTimeSpent" value="36771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1286" height="996" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -351,16 +383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/index/IndexTabBar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index/Index.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/store/appShell/nearby/nearbyNav.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-551">
@@ -395,44 +417,6 @@
     <entry file="file://$PROJECT_DIR$/pages/Market.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/Index.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/main/GoodsList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="934">
-          <caret line="100" column="28" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/nearby/NearbyNav.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index/Nearby.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="62" column="25" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="62" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index/Community.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/community/Moment.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/store/appShell/main/goodsList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -440,10 +424,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/store/appShell/community/moment.js">
+    <entry file="file://$PROJECT_DIR$/store/appShell/appTabBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        <state>
+          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/appShell/appHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/Index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1170" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/index/IndexTabBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/nearby/NearbyNav.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/Nearby.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="42" selection-end-column="10" />
+          <folding>
+            <element signature="e#195#249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/AppHeader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#2031#2061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/stylus/main.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/main/GoodsList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/appShell/community/communityMoment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="79" column="252" selection-start-line="79" selection-start-column="252" selection-end-line="79" selection-end-column="252" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/community/CommunityMoment.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-251">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/Community.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/AppTabBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/Index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
         </state>
       </provider>
     </entry>

@@ -46,7 +46,7 @@
             ])
         },
         methods: {
-            switchBar: function (index) {
+            switchBar(index) {
                 if (index !== this.active && index !== 2) {
                     this.active = index;
                 }

@@ -15,6 +15,7 @@
             show: true,
             showLogo: true,
             showTitle: true,
+            showCommunity: false,
             showActions: true,
             title: '白山',
             actions: [

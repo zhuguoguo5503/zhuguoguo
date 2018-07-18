@@ -36,17 +36,17 @@
             }, {
                 active: 'static/img/tab/orchard-white.png',
                 noactive: 'static/img/tab/orchard-gray.png',
-                name: '我的果园',
+                name: '果园',
                 link: 'orchard'
             }, {
                 active: 'static/img/tab/community-white.png',
                 noactive: 'static/img/tab/community-gray.png',
-                name: '种草区',
+                name: '种草',
                 link: '/community'
             }, {
                 active: 'static/img/tab/user-white.png',
                 noactive: 'static/img/tab/user-gray.png',
-                name: '个人中心',
+                name: '个人',
                 link: '/user'
             }]
         });
@@ -82,5 +82,6 @@
         left 0
         right 0
         bottom 0
+        z-index 12
 
 </style>
