@@ -41,9 +41,9 @@
             display inline-block
             width 33vw
             height 63vw
-            margin-right 3vw
+            margin-right 2vw
             border-radius 3vw
-            box-shadow 1vw 1vw 1vw
+            /*box-shadow 2px 2px 2px #dcdcdc*/
             background orange
 
             & > a

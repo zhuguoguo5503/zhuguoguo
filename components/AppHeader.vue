@@ -143,7 +143,7 @@
             align-items center
             width 90vw
             height 14vw
-            border-bottom 2px solid gray
+            /*border-bottom 1px solid gray*/
 
             .community-tab-item
                 margin 0 2vw

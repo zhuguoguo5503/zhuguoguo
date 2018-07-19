@@ -12,6 +12,7 @@
         store.dispatch('appShell/appHeader/setAppHeader', {
             show: true,
             showLogo: false,
+            showBack: false,
             showTitle: false,
             showCommunity: true,
             showActions: false,
@@ -52,7 +53,7 @@
         right 0
         bottom 12vw
         left 0
-        padding 0 5vw
+        padding 0 2vw 0 3vw
         margin 0
         overflow-x hidden
         overflow-y scroll

@@ -66,7 +66,9 @@ module.exports = {
             'map-marker',
             'tree',
             'globe',
-            'user'
+            'user',
+            'heart',
+            'angle-right'
         ]
     },
     router: {

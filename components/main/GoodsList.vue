@@ -4,7 +4,15 @@
             <div class="goods-item"
                  v-for="goods in goodsListLeft"
                  :key="goods.id">
-                <router-link :to="{ name: 'goodsDetailId', params: { id: goods.id }}">
+                <router-link :to="{
+                    name: 'goodsDetailId',
+                    params: {
+                        id: goods.id,
+                        name: goods.name,
+                        sales: goods.sales,
+                        sold: goods.sold
+                    }
+                }">
                     <img :src="goods.image" alt="">
                     <div class="goods-intro">
                         <div class="goods-intro-top">
@@ -80,7 +88,7 @@
         overflow-y scroll
 
         .goods-col
-            width 45vw
+            width 47vw
 
             & > div
                 margin-top 3vw
@@ -90,7 +98,7 @@
 
             .goods-item
                 position relative
-                width 42vw
+                width 46vw
                 background #ffffff
                 border-radius 2vw
                 box-shadow 2px 2px 2px #dcdcdc
@@ -98,12 +106,12 @@
 
                 img
                     position relative
-                    width 42vw
+                    width 46vw
                     margin-bottom -2vw
                     border-radius 2vw 2vw 0 0
 
                 .goods-intro
-                    padding 1vw
+                    padding 2vw
 
                     .goods-intro-top
 
@@ -119,6 +127,13 @@
                         align-items center
                         color #acacac
                         font-size 10px
+
+                    .goods-intro-center
+                        .goods-sales
+                            .goods-sales-item
+                                color #e15517
+                                border 1px solid #e15517
+                                border-radius 3px
 
                     .goods-price
                         font-size 12px

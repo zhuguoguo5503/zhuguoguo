@@ -65,7 +65,7 @@
 
     .nearby-nav-main
         height 10vw
-        margin 0 5vw
+        margin 0 2vw
         white-space nowrap
         background #f5f5f5
         overflow-x scroll
@@ -91,8 +91,22 @@
             .nearby-nav-sub
                 position fixed
                 top 36vw
-                right 5vw
-                left 5vw
+                right 2vw
+                left 2vw
                 bottom 0
+
+                & > div
+                    display flex
+                    flex-flow row wrap
+                    align-items center
+                    padding 2vw
+                    background #f5f5f5
+                    opacity .9
+
+                    .nearby-nav-sub-item
+                        padding 1vw
+                        line-height 5vw
+
+
 
 </style>

@@ -13,8 +13,9 @@
     function setState(store) {
         store.dispatch('appShell/appHeader/setAppHeader', {
             show: true,
-            showLogo: true,
-            showTitle: true,
+            showBack: false,
+            showLogo: false,
+            showTitle: false,
             showCommunity: false,
             showActions: true,
             title: '白山',
@@ -58,7 +59,7 @@
         right 0
         bottom 12vw
         left 0
-        padding 0 5vw
+        padding 0 2vw 0 3vw
         margin 0
         overflow-x hidden
         overflow-y scroll

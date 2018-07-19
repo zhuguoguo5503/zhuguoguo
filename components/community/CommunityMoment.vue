@@ -4,23 +4,24 @@
             <div class="moment-item"
                  v-for="moment in momentListLeft"
                  :key="moment.id">
-                <router-link class="moment-author" :to="{ name: 'goodsDetailId', params: { id: moment.authorID }}">
-                    <img :src="moment.avator" alt="">
-                    <span>{{moment.author}}</span>
-                </router-link>
+
                 <router-link class="moment-content" :to="{ name: 'goodsDetailId', params: { id: moment.id }}">
                     <img :src="moment.image" alt="">
                     <div class="moment-detail">
                         <div class="moment-title">{{moment.title}}</div>
-                        <div class="moment-preview">{{moment.article}}</div>
                         <div class="moment-info">
                             <div class="moment-sower">转发:{{moment.sower}}</div>
                             <div class="moment-time">{{moment.time}}</div>
                         </div>
                         <div class="moment-action">
-                            <div class="moment-liker">{{moment.liker}}</div>
-                            <div class="moment-comment">{{moment.comment}}</div>
-                            <div class="moment-relay">{{moment.relay}}</div>
+                            <router-link class="moment-author" :to="{ name: 'goodsDetailId', params: { id: moment.authorID }}">
+                                <img :src="moment.avator" alt="">
+                                <span>{{moment.author}}</span>
+                            </router-link>
+                            <div class="moment-liker">
+                                <icon name="heart" scale="1"></icon>
+                                <span>{{moment.liker}}</span>
+                            </div>
                         </div>
                     </div>
                 </router-link>
@@ -30,23 +31,24 @@
             <div class="moment-item"
                  v-for="moment in momentListRight"
                  :key="moment.id">
-                <router-link class="moment-author" :to="{ name: 'goodsDetailId', params: { id: moment.authorID }}">
-                    <img :src="moment.avator" alt="">
-                    <span>{{moment.author}}</span>
-                </router-link>
+
                 <router-link class="moment-content" :to="{ name: 'goodsDetailId', params: { id: moment.id }}">
                     <img :src="moment.image" alt="">
                     <div class="moment-detail">
                         <div class="moment-title">{{moment.title}}</div>
-                        <div class="moment-preview">{{moment.article}}</div>
                         <div class="moment-info">
                             <div class="moment-sower">转发:{{moment.sower}}</div>
                             <div class="moment-time">{{moment.time}}</div>
                         </div>
                         <div class="moment-action">
-                            <div class="moment-liker">{{moment.liker}}</div>
-                            <div class="moment-comment">{{moment.comment}}</div>
-                            <div class="moment-relay">{{moment.relay}}</div>
+                            <router-link class="moment-author" :to="{ name: 'goodsDetailId', params: { id: moment.authorID }}">
+                                <img :src="moment.avator" alt="">
+                                <span>{{moment.author}}</span>
+                            </router-link>
+                            <div class="moment-liker">
+                                <icon name="heart" scale="1"></icon>
+                                <span>{{moment.liker}}</span>
+                            </div>
                         </div>
                     </div>
                 </router-link>
@@ -80,7 +82,7 @@
         overflow-y scroll
 
         .moment-col
-            width 45vw
+            width 47vw
 
             & > div
                 margin-top 3vw
@@ -90,33 +92,20 @@
 
             .moment-item
                 position relative
-                width 42vw
+                width 46vw
                 background #ffffff
                 border-radius 2vw
                 box-shadow 2px 2px 2px #dcdcdc
                 z-index 10
 
-                .moment-author
-                    display flex
-                    flex-direction row
-                    align-items center
-                    padding 2vw
-                    color #333333
-                    font-weight bold
-
-                    img
-                        width 10vw
-                        height 10vw
-                        margin-right 1vw
-                        border-radius 50%
-
                 .moment-content
 
                     img
-                        width 42vw
+                        width 46vw
+                        border-radius 2vw 2vw 0 0
 
                     .moment-detail
-                        padding 2vw 2vw 0 2vw
+                        padding 2vw
 
                         & > div
                             margin-bottom 1vw
@@ -126,19 +115,10 @@
 
                         .moment-title
                             color #363636
-                            font-size 16px
+                            font-size 14px
                             font-weight bold
+                            text-align left
                             overflow hidden
-                            text-overflow ellipsis
-                            white-space nowrap
-
-                        .moment-preview
-                            height 24px
-                            color #636363
-                            font-size 12px
-                            line-height 12px
-                            overflow hidden
-                            text-overflow ellipsis
 
                         .moment-info
                             display flex
@@ -152,20 +132,35 @@
                                 font-size 12px
 
                         .moment-action
-                            position relative
-                            left -2vw
                             display flex
                             flex-direction row
-                            width 42vw
-                            background #696969
-                            border-radius 0 0 2vw 2vw
+                            justify-content space-between
+                            align-items center
+
+                            .moment-author
+                                display flex
+                                flex-direction row
+                                align-items center
+                                color #333333
+                                font-size 10px
+                                font-weight bold
+
+                                img
+                                    width 7vw
+                                    height 7vw
+                                    margin-right 1vw
+                                    border-radius 50%
 
                             .moment-liker
-                            .moment-comment
-                            .moment-relay
-                                flex-grow 1
-                                color #f5f5f5
-                                border-right 2px solid #d8d8d8
+                                display flex
+                                flex-direction row
+                                justify-content center
+                                align-items center
+                                font-size 10px
+                                color #636363
+
+                                span
+                                    margin-left 1vw
 
 
 </style>
