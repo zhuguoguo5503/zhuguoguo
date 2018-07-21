@@ -597,8 +597,8 @@
 
 8. 【强制】`varchar` 是可变长字符串，不预先分配存储空间，长度不要超过 5000，如果存储长度大于此值，定义字段类型为 `text`，独立出来一张表，用主键来对应，避免影响其它字段索引效率。
 
-9. 【强制】表必备三字段：id, gmt_create, gmt_modified。
-    > 说明：其中 id 必为主键，类型为 `bigint unsigned`、单表时自增、步长为 1。gmt_create,gmt_modified 的类型均为 `datetime` 类型，前者现在时表示主动创建，后者过去分词表示被动更新。
+9. 【强制】表必备三字段：id, create_time, update_time。
+    > 说明：其中 id 必为主键，类型为 `bigint unsigned`、单表时自增、步长为 1。create_time,update_time 的类型均为 `datetime` 类型，前者现在时表示主动创建，后者过去分词表示被动更新。
 
 10. 【推荐】表的命名最好是加上“业务名称_表的作用”。
 
